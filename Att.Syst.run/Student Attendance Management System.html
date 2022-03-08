@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://localhost/StudentAttendanceMgSystem/index.php?page=dashboard -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Student Attendance Management System</title>
+    
+    <link href="./Student Attendance Management System_files/bootstrap.min.css" rel="stylesheet">   
+		<link href="./Student Attendance Management System_files/style.css" rel="stylesheet">
+		<script src="./Student Attendance Management System_files/jquery.min.js.download"></script>
+		<script src="./Student Attendance Management System_files/validator.min.js.download"></script>
+  </head>
+  <body>
+  
+  	<div id="wrapper">
+    <div class="overlay"></div>
+    
+    <h1>Student Attendance Management System</h1>
+    <style>
+      h1{
+        margin-top:0;
+        padding: 20px;
+        background-color: #337ab7;
+        color:white;
+        text-align: center;
+      }
+      .sidebar-wrapper{
+        color: white;
+      }
+    </style>    
+ 
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+			<ul class="nav sidebar-nav">
+					<li class="sidebar-brand">
+
+							<a href="http://localhost/StudentAttendanceMgSystem/index.php">
+						
+							</a>
+					</li>
+					<li>
+							<a href="http://localhost/StudentAttendanceMgSystem/index.php?page=dashboard"><i class="glyphicon glyphicon-home"></i> Dashboard</a>
+					</li>
+					<li>
+							<a href="http://localhost/StudentAttendanceMgSystem/index.php"><i class="glyphicon glyphicon-calendar"></i> Take Attendance</a>
+					</li>
+					<li>
+							<a href="http://localhost/StudentAttendanceMgSystem/index.php?page=studentinfo"><i class="glyphicon glyphicon-user"></i> Students List</a>
+					</li>
+					<li>
+							<a href="http://localhost/StudentAttendanceMgSystem/index.php?page=reports"><i class="glyphicon glyphicon-duplicate"></i> Reports</a>
+					</li>
+					<li>
+							<a href="http://localhost/StudentAttendanceMgSystem/index.php?page=logout"><i class="glyphicon glyphicon-off"></i> Logout</a>
+					</li>
+			</ul>
+	</nav>
+<!-- Page Content -->
+	<div id="page-content-wrapper">
+		<button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+			<span class="hamb-top"></span>
+			<span class="hamb-middle"></span>
+			<span class="hamb-bottom"></span>
+		</button>
+			<div class="container">
+				<div class="row">
+				
+<div class="row">
+	<div class="col-lg-5">
+		<div class="panel panel-danger">
+			<div class="panel-heading">
+			  <h3 class="panel-title text-center"><b>Pending Attendance</b></h3>
+			</div>
+			<div class="panel-body text-center">
+				  <p><a href="http://localhost/StudentAttendanceMgSystem/index.php?subject=4&amp;date=2022-03-04" style="text-decoration:none;">Class: <strong style="color:#555;">Web Development</strong> of <strong>04/03/2022</strong></a> <span class="label label-danger" style="border-radius:0%;">Mark Attendance Now!</span></p><hr><p><a href="http://localhost/StudentAttendanceMgSystem/index.php?subject=4&amp;date=2022-03-03" style="text-decoration:none;">Class: <strong style="color:#555;">Web Development</strong> of <strong>03/03/2022</strong></a> <span class="label label-danger" style="border-radius:0%;">Mark Attendance Now!</span></p><hr><p><a href="http://localhost/StudentAttendanceMgSystem/index.php?subject=4&amp;date=2022-03-02" style="text-decoration:none;">Class: <strong style="color:#555;">Web Development</strong> of <strong>02/03/2022</strong></a> <span class="label label-danger" style="border-radius:0%;">Mark Attendance Now!</span></p><hr><p><a href="http://localhost/StudentAttendanceMgSystem/index.php?subject=4&amp;date=2022-03-01" style="text-decoration:none;">Class: <strong style="color:#555;">Web Development</strong> of <strong>01/03/2022</strong></a> <span class="label label-danger" style="border-radius:0%;">Mark Attendance Now!</span></p><hr><p><a href="http://localhost/StudentAttendanceMgSystem/index.php?subject=4&amp;date=2022-02-28" style="text-decoration:none;">Class: <strong style="color:#555;">Web Development</strong> of <strong>28/02/2022</strong></a> <span class="label label-danger" style="border-radius:0%;">Mark Attendance Now!</span></p>				  
+			</div>
+		  </div>
+	</div>
+
+	<div class="col-md-5">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+			  <h3 class="panel-title text-center"><b>Today's Attendance</b></h3>
+			</div>
+			<div class="panel-body text-center">
+				  <p><a href="http://localhost/StudentAttendanceMgSystem/index.php?subject=4&amp;date=07-03-2022" style="text-decoration:none;">Class: <strong style="color:#555;">Web Development</strong> of <strong>Today's</strong> (07/03/2022)</a> <span class="label label-danger" style="border-radius:0%;">Mark Attendance Now!</span></p>			</div>
+		  </div>
+	</div>
+
+	<div class="col-lg-2">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+			  <h3 class="panel-title text-center"><b>You Have:</b></h3>
+			</div>
+			<div class="panel-body text-center">
+			  <p><i class="fa fa-book"></i> <a href="http://localhost/StudentAttendanceMgSystem/index.php?page=studentinfo" style="text-decoration:none;"> <strong><span class="badge badge-pill badge-danger">1</span></strong> Subject/s </a></p>
+				  				  
+				  					  <p><i class="fa fa-users"></i> <a href="http://localhost/StudentAttendanceMgSystem/index.php?page=studentinfo" style="text-decoration:none;"><strong><span class="badge badge-pill badge-danger">22</span></strong> Student/s</a></p>
+				  			</div>
+		  </div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-2"></div>
+
+	<div class="col-lg-7">
+		
+	</div>
+
+	<div class="col-lg-3">
+		
+	</div>
+</div>
+
+
+
+				</div>
+			</div>
+	</div>
+	<!-- /#page-content-wrapper -->
+
+</div>
+		<footer id="footer">
+			<div id="">
+			
+
+			
+				
+			<p></p>
+			</div>
+			<div id="links">
+			Developers: 
+				<a href="http://localhost/StudentAttendanceMgSystem/index.php?page=dashboard#" taget="_blank">Bhagwan Gore</a> 
+				<a href="http://localhost/StudentAttendanceMgSystem/index.php?page=dashboard#" taget="_blank"></a> 
+				<a href="http://localhost/StudentAttendanceMgSystem/index.php?page=dashboard#" taget="_blank"></a> 
+				<a href="http://localhost/StudentAttendanceMgSystem/index.php?page=dashboard#" taget="_blank"></a> 
+			</div>
+			
+		</footer>
+		<style>
+			footer {
+			position: fixed;
+  			bottom: 0;
+  			background-color: #373435;
+  			width: 100%;
+  			text-align: center; 
+  			color: #fff;
+  			padding-bottom: 10px;
+
+			}	
+			
+
+			#footer a{
+				margin-right:10px;
+				text-decoration: none;
+				color: white;
+				padding-left:15px;
+				padding-right:15px;
+				margin-bottom:10px;
+			}
+			footer a:hover{
+				color: white;
+			}
+
+		</style>
+		<script src="./Student Attendance Management System_files/bootstrap.min.js.download"></script>
+    <script src="./Student Attendance Management System_files/custom.js.download"></script>
+  
+</body></html>
